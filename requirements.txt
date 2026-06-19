@@ -1,0 +1,18 @@
+# CareerCopilot
+
+An AI-powered career assistant that helps users improve their resumes and prepare for interviews.
+
+## MVP Features
+
+- Upload resume PDF
+- Extract resume text
+- Analyze strengths and weaknesses
+- Suggest improvements
+- Generate interview questions
+
+## Future Features
+
+- Resume scoring
+- Mock interviews
+- Interview feedback
+- Job-specific analysis
