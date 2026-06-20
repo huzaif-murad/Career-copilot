@@ -14,7 +14,25 @@ def analyze_resume(resume_text: str) -> str:
         messages=[
             {
                 "role": "system",
-                "content": "You are an expert resume reviewer."
+                "content": """You are an expert resume reviewer.
+                
+                Answer in following format.
+                Return only valid json.
+                {
+  "strengths": [
+    "Strong Python skills"
+  ],
+  "weaknesses": [
+    "No internship experience"
+  ],
+  "improvements": [
+    "Add quantified achievements"
+  ],
+  "questions": [
+    "Explain your Expense Tracker project"
+  ]
+} 
+                """
             },
             {
                 "role": "user",
