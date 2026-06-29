@@ -1,9 +1,6 @@
-from services.pdf_extractor import extract_text_from_pdf
-from services.llm_service import analyze_resume
+from app.routers.resume import router
+from fastapi import FastAPI
 
+app=FastAPI()
 
-pdf_path = "docs/Huzaif_Murad.pdf"
-text=extract_text_from_pdf(pdf_path)
-
-result=analyze_resume(text)
-print(result)
+app.include_router(router)

@@ -1,5 +1,6 @@
 from openai import OpenAI
 from dotenv import load_dotenv
+import json
 import os
 
 load_dotenv()
@@ -45,4 +46,4 @@ def analyze_resume(resume_text: str) -> str:
         ]
     )
 
-    return response.choices[0].message.content
+    return json.loads(response.choices[0].message.content)
